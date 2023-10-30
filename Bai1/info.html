@@ -6,21 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="hearderBody">
-        <section class="pc">
-            <div class="left">
-                <a href="#"><p class="headerName">Hanacoの業界特化型オンライン通訳</p></a>
-            </div>
-            <div class="right">
-                <a href="#"><img src="image/one.png" class="headerOne"></a>
-                <a href="#"><img src="image/noti.png" class="headerNoti"></a>
-                <a href="#"><img src="image/mes.png" class="headerNoti"></a>
-                <a href="#"><img src="image/avt.png" class="headeravt"></a>
-                <div class="headerlogin">
-                    <a href="#"><p class="textlogin">企業の方はこちら</p></a>
+    <div class="body">
+        <header>
+            <section class="pc">
+                <div class="left">
+                    <a href="#"><p class="headerName">Hanacoの業界特化型オンライン通訳</p></a>
                 </div>
-            </div>
-        </section>
+                <div class="right">
+                    <a href="#"><img src="image/one.png" class="headerOne"></a>
+                    <a href="#"><img src="image/noti.png" class="headerNoti"></a>
+                    <a href="#"><img src="image/mes.png" class="headerNoti"></a>
+                    <a href="#"><img src="image/avt.png" class="headeravt"></a>
+                    <div class="headerlogin">
+                        <a href="#"><p class="textlogin">企業の方はこちら</p></a>
+                    </div>
+                </div>
+            </section>
+        </header>
         <section>
             <nav class="left-nav">
                 <div class="icon-link-container">
@@ -44,16 +46,18 @@
             
             </nav>
             <article>
-                <img src="image/avtcenter.png" class="avtcenter">
-                <div class="icon">
-                    <div class="logo">
-                        <a href="#" class="textlogo">プロフィール写真を変更</a>
+                <div class="item1">
+                    <img src="image/avtcenter.png" class="avtcenter">
+                    <div class="icon">
+                        <div class="logo">
+                            <a href="#" class="textlogo">プロフィール写真を変更</a>
+                        </div>
                     </div>
                 </div>
                 <div class="leftct">
                     <img src="image/blue.png" class="blue"><p class="textct">お名前（必須）</p>
                 </div>
-                <div class="container">
+                <div class="container-one">
                     <input type="text" class="boxleftct" placeholder="姓">
                     <div class="rightct">
                         <input type="text" class="boxrightct" placeholder="名">
@@ -73,7 +77,7 @@
                     <label class="circle-label" for="option3" style="margin-left: 30px;margin-top: 5px;"></label>
                     <p class="textct" style="margin-left: 20px;">その他・未回答</p>
                 </div>
-                <div class="container">
+                <div class="container-two">
                     <div class="leftct">
                         <img src="image/blue.png" class="blue"><p class="textct">メールアドレス（必須）</p>
                     </div>
@@ -96,7 +100,7 @@
                 </div>
                 <input type="text" class="info" placeholder="日本">
                 <div class="leftct">
-                    <img src="image/blue.png" class="blue"><p class="textct">性別</p>
+                    <img src="image/blue.png" class="blue"><p class="textct">通話可能言語（必須）</p>
                 </div>
                 <div class="checkbox-container">
                     <label class="checkbox-label">
@@ -159,7 +163,7 @@
                 <button type="button" id="saveButton">
                     <p class="textbutton">変更を保存する</p><img src="image/Line.png">
                 </button>
-            </article> 
+            </article>
         </section>
         <footer>
             <a href="#" class="text-footer-one">Hanacoの業界特化型オンライン通訳</a>
@@ -185,9 +189,8 @@
                 <a href="#" class="text-footer-five">プライバシーポリシー</a>
             </div>
         </footer>
-    </header>
+    </div>
     <script>
-        // Lấy tham chiếu đến nút lưu
         const saveButton = document.getElementById('saveButton');
         saveButton.addEventListener('click', function() {
             const userResponse = window.confirm('変更を保存しますか？');
